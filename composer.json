@@ -1,0 +1,20 @@
+{
+    "name": "academico/pdv-mvc",
+    "description": "Sistema de PDV acadêmico em PHP puro com arquitetura MVC, Design Patterns e PostgreSQL (Neon).",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public",
+        "migrate": "php database/migrate.php --seed"
+    }
+}

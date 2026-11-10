@@ -1,0 +1,51 @@
+body {
+    background-color: var(--bs-tertiary-bg);
+}
+
+.card-indicador .valor {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.thumb-produto {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: .375rem;
+    background: var(--bs-secondary-bg);
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.qtd-input {
+    max-width: 90px;
+}
+
+.cupom {
+    max-width: 420px;
+    margin: 0 auto;
+    font-family: "Courier New", Courier, monospace;
+    background: #fff;
+    color: #000;
+}
+
+.cupom hr {
+    border-top: 1px dashed #000;
+    opacity: 1;
+}
+
+@media print {
+    body {
+        background: #fff;
+    }
+    main.container {
+        max-width: 100%;
+        padding: 0 !important;
+    }
+    .cupom {
+        box-shadow: none !important;
+        border: 0 !important;
+    }
+}

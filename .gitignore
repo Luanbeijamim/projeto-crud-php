@@ -1,0 +1,20 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências do Composer
+/vendor/
+
+# Arquivos gerados em tempo de execução
+/storage/logs/*
+!/storage/logs/.gitkeep
+/public/uploads/produtos/*
+!/public/uploads/produtos/.gitkeep
+
+# IDE / sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+error_log
